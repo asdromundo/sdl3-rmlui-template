@@ -53,9 +53,6 @@ void SplashScene::RenderLogo(SDL_Renderer *renderer)
 
     // Actualizar el rendering target
     SDL_RenderPresent(app->renderer);
-
-    // End scene after timer
-    SDL_AddTimer(200, SceneFinishedTimerCallback, nullptr);
 }
 
 void SplashScene::OnEnter()
@@ -63,6 +60,8 @@ void SplashScene::OnEnter()
     if (logoTexture)
     {
         RenderLogo(app->renderer);
+        // End scene after timer
+        SDL_AddTimer(200, SceneFinishedTimerCallback, nullptr);
     }
 }
 

@@ -1,4 +1,4 @@
-#include "texture.h"
+#include "Texture.h"
 
 namespace core::utils::image {
 

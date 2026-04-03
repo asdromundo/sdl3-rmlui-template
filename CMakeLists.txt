@@ -119,7 +119,7 @@ set(SDLMIXER_WAVPACK OFF)
 set(SDLMIXER_MOD OFF)
 set(SDLMIXER_OPUS OFF)
 set(SDLMIXER_VENDORED ON)
-add_subdirectory(external/SDL_mixer EXCLUDE_FROM_ALL)
+add_subdirectory(external/SDL_Mixer EXCLUDE_FROM_ALL)
 
 target_compile_definitions(${EXECUTABLE_NAME} PRIVATE RMLUI_SDL_VERSION_MAJOR=3)
 add_subdirectory(external/RmlUi EXCLUDE_FROM_ALL)
